@@ -1,3 +1,3 @@
 <h2>InternetInfo</h2>
 <h3>Program do spisywana wartości sieci, powstał w celu edukacyjnych</h3> 
-<p>Pliki z nazwą "D" "E" tworzą plik txt z wartościami na danej partycji</p>
+<p>Pliki z nazwą "D" "E" tworzą plik txt z wartościami na danej partycji !</p>
